@@ -4,6 +4,6 @@ users = [
 ]
 
 for i in users:
-    # print(i)
-    print("------------")
-    print(i["id"])
+    print("id : {0}".format(i["id"]))
+    print("name : " + i["name"])
+    print("\n")
