@@ -20,3 +20,20 @@ friendships = [
 
 for i in friendships:
     print("me: {0}".format(i))
+    print("friends: {0}".format(friendships[0]))
+    print("--------------------")
+
+def find_users(i, users):
+    for i in users:
+        print("users: {0}".format(i))
+
+    for i in user["friends"]:
+        if user["friends"] == "":
+            print("i -> {0} -- user[friends] -> {1}".format(i, user["friends"]))
+
+        else:
+            print("Not Null")
+
+
+for i in users:
+    find_users(i, users)
