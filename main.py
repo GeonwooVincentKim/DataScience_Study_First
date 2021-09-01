@@ -35,5 +35,6 @@ def find_users(i, users):
             print("Not Null")
 
 
-for i in users:
-    find_users(i, users)
+if __name__ == "__main__":
+    for i in users:
+        find_users(i, users)
