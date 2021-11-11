@@ -34,3 +34,12 @@ num_users = len(users)
 average_connections = total_connections / num_users
 print(average_connections)
 
+# Generate the list that consist (user_id, number_of_friends)
+num_friends_by_id = [(user["id"], number_of_friends(user)) for user in users]
+print(number_of_friends)
+
+show_result = num_friends_by_id.sort(
+    key=lambda id_and_friends: id_and_friends[1],  # Based on num_friends
+    reverse=True
+)
+print(show_result)
