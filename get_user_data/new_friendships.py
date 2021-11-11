@@ -10,7 +10,11 @@ print(friendships)
 for i, j in friendships_pairs:
     friendships[i].append(j)
     friendships[j].append(i)
-
+    
+    print("friendships[i] -> {0}".format(friendships[i]))
+    # print(friendships[i])
+    print("friendships[j] -> {0}".format(friendships[j]))
+    print("\n")
 
 def number_of_friends(user):
     """Check how many friends does `user` have
