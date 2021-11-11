@@ -43,3 +43,14 @@ show_result = num_friends_by_id.sort(
     reverse=True
 )
 print(show_result)
+
+
+def foaf_ids_bad(user):
+    # "foaf" is the abbreviation meaning of "friend of a friend"
+    return [
+        foaf_id
+        for friend_id in friendships[user["id"]]
+        for foaf_id in friendships[friend_id]
+    ]
+
+print(foaf_ids_bad(users[0]))
