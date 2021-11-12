@@ -4,13 +4,14 @@ import sys
 sys.path.insert(0, 'E:/Project/Python/Python_DataScience/Project_01_DataScience')
 
 from collections import defaultdict
+from attribute.interests_attribute import *
 from get_user_data.count_friends import *
 from get_user_data.recommand_user import *
 
 
-def hi():
-    print("hi")
+user_ids_by_interest = defaultdict(list)
 
-
-if __name__ == "__main__":
-    hi()
+for user_id, interest in interests:
+    user_ids_by_interest[interest].append(user_id)
+    
+    print(user_ids_by_interest)
