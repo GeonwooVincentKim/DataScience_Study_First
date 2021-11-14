@@ -49,11 +49,11 @@ for salary, tenure in salaries_and_tenures:
     
     # print(salaries_and_tenures)
 
-
+# Key -> Section of Consecutive Years
+# Value -> Users average annual-income of that section
 average_salary_by_bucket = {
     tenure_bucket: sum(salaries) / len(salaries)
     for tenure_bucket, salaries in salary_by_tenure_bucket.items()
 }
-
 
 print("Dictionary of `Average_salary_bucket` -> {0}".format(average_salary_by_bucket))
