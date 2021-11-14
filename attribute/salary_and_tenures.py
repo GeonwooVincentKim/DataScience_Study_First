@@ -98,3 +98,17 @@ average_salary_by_vacation = {
 }
 
 print("Dictionary of `Average_salary_by Vacation` -> {0}".format(average_salary_by_vacation))
+
+
+def predict_paid_or_unpaid(years_experience):
+    if years_experience < 3.0:
+        return "paid"
+    
+    elif years_experience < 0.5:
+        return "unpaid"
+    
+    else:
+        return "paid"
+
+
+print("Check some First-User paid -> {0}".format(predict_paid_or_unpaid(tenure)))
