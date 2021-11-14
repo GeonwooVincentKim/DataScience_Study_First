@@ -1,6 +1,7 @@
 import os
 import sys
-sys.path.insert(0, 'E:/Project/Python/Python_DataScience/Project_01_DataScience')
+sys.path.insert(0, "E:/DataScience_밑바닥데이터사이언스")
+# sys.path.insert(0, 'E:/Project/Python/Python_DataScience/Project_01_DataScience')
 # sys.path.append(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
 
 from attribute.user_attribute import *
