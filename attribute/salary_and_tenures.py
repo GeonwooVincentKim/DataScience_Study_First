@@ -28,3 +28,32 @@ average_salary_by_tenure = {
 }
 
 print("Dictionary of `Average_salary_by_Tenure` -> {0}".format(average_salary_by_tenure))
+
+
+def tenure_bucket(tenure):
+    if tenure < 2:
+        return "less than two"
+    
+    elif tenure < 5:
+        return "between two and five"
+
+    else:
+        return "more than five"
+
+
+salary_by_tenure_bucket = defaultdict(list)
+
+for salary, tenure in salaries_and_tenures:
+    bucket = tenure_bucket(tenure)
+    salary_by_tenure_bucket[bucket].append(salary)
+    
+    # print(salaries_and_tenures)
+
+
+average_salary_by_bucket = {
+    tenure_bucket: sum(salaries) / len(salaries)
+    for tenure_bucket, salaries in salary_by_tenure_bucket.items()
+}
+
+
+print("Dictionary of `Average_salary_bucket` -> {0}".format(average_salary_by_bucket))
