@@ -29,3 +29,11 @@ words_and_counts = Counter(
 )
 
 print(words_and_counts)
+
+for word, count in words_and_counts.most_common():
+    if count > 1:
+        print(word, count)
+
+    # Will not print this part
+    elif count < 1:
+        print("Not satisfied condition : {0} {1}".format(word, count))
