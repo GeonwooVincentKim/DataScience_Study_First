@@ -4,6 +4,7 @@ sys.path.insert(0, "E:/DataScience_밑바닥데이터사이언스")
 # sys.path.insert(0, 'E:/Project/Python/Python_DataScience/Project_01_DataScience')
 
 from collections import defaultdict
+from get_user_data.recommand_user import *
 
 salaries_and_tenures = [
     (83000, 8.7), (88000, 8.1),
