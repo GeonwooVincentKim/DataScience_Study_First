@@ -1,8 +1,6 @@
 import os
 import sys
-sys.path.insert(0, "E:/DataScience_밑바닥데이터사이언스")
-# sys.path.insert(0, 'E:/Project/Python/Python_DataScience/Project_01_DataScience')
-# sys.path.append(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
+sys.path.append(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
 
 from attribute.user_attribute import *
 
@@ -10,6 +8,9 @@ friendships = {user["id"]: [] for user in users}
 print(friendships)
 
 for i, j in friendships_pairs:
+    # print("Before friendships[i] -> {0}".format(friendships[i]))
+    # print("Before friendships[j] -> {0}".format(friendships[j]))
+    
     friendships[i].append(j)
     friendships[j].append(i)
     
