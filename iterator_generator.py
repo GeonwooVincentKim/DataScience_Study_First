@@ -7,5 +7,5 @@ def generate_range(n):
         print(i)
 
 
-for i in generate_range(10):
-    print(f"i: {i}")
+# for i in generate_range(10):
+#     print(f"i: {i}")
